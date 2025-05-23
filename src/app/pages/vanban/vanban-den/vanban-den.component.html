@@ -1,1 +1,70 @@
-<p>vanban-den works!</p>
+<div class="page-layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Chức năng chính</div>
+    <ul class="sidebar-menu">
+      <li><a routerLink="/vanban/vanban-den"><i class="fa fa-file"></i> Văn bản đến</a></li>
+      <li><a routerLink="/vanban/vanban-di"><i class="fa fa-sign-out"></i> Văn bản đi</a></li>
+      <li><a routerLink="/vanban/vanban-dangxuly"><i class="fa fa-file-text"></i> Văn bản đang xử lý</a></li>
+      <li><a routerLink="/vanban/vanban-daxuly"><i class="fa fa-folder-open"></i> Văn bản đã xử lý</a></li>
+      <li><a routerLink="/vanban/vanban-quahan"><i class="fa fa-briefcase"></i> Văn bản quá hạn</a></li>
+      <li><a routerLink="/vanban/totrinh"><i class="fa fa-file"></i> Tờ trình</a></li>
+      <li><a routerLink="/vanban/quyetdinh"><i class="fa fa-cog"></i> Quyết định</a></li>
+      <li><a routerLink="/vanban/vanban-thongbao"><i class="fa fa-eye"></i> Văn bản thông báo</a></li>
+    </ul>
+  </aside>
+
+  <section class="main-page">
+    <!-- Thanh tìm kiếm -->
+    <div class="search-bar">
+      <input type="text" placeholder="Tên văn bản tìm kiếm">
+      <div class="search-buttons">
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tùy chọn hiển thị số bản ghi -->
+    <div class="record-options">
+      <label for="recordsPerPage">Hiển thị</label>
+      <select id="recordsPerPage">
+        <option>10</option>
+        <option>20</option>
+        <option>30</option>
+        <option>50</option>
+      </select>
+      <span> bản ghi</span>
+    </div>
+
+    <!-- Bảng dữ liệu (chỉ có tiêu đề) -->
+    <div class="table-container">
+      <table>
+        <thead>
+        <tr>
+          <th>Số đến</th>
+          <th>Ngày đến</th>
+          <th>Đơn vị gửi</th>
+          <th>Số CV</th>
+          <th>Trích yếu</th>
+          <th>Đơn vị xử lý</th>
+          <th>Thao tác</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Dữ liệu sẽ được render sau -->
+        <tr>
+          <td colspan="7" style="text-align: center; color: #888;">Chưa có dữ liệu</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phân trang -->
+    <div class="pagination">
+      <button disabled>1</button>
+      <button disabled>2</button>
+      <button disabled>3</button>
+      <button disabled>Tiếp</button>
+    </div>
+  </section>
+</div>
