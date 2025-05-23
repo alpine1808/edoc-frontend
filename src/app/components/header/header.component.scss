@@ -1,0 +1,55 @@
+.topbar {
+  position: fixed;  // nếu muốn nó luôn ở trên
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background: #f8f9fa;
+  padding: 18px 20px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+
+  .topbar-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; // để tạo khoảng cách nhỏ với menu nếu cần
+
+    .app-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .app-subtitle {
+      font-size: 13px;
+      color: #666;
+    }
+  }
+
+  .topbar-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .topbar-user {
+    margin-left: auto; // đẩy user sang bên phải
+    font-size: 14px;
+    color: #333;
+  }
+}

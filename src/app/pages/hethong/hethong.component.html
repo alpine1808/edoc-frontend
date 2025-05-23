@@ -1,0 +1,66 @@
+<div class="page-layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Danh mục</div>
+    <ul class="sidebar-menu">
+      <li><a routerLink="/vanban/vanban-den"><i class="fa fa-file"></i> Danh sách người sử dụng</a></li>
+      <li><a routerLink="/vanban/vanban-di"><i class="fa fa-sign-out"></i> Phân quyền</a></li>
+      <li><a routerLink="/vanban/vanban-dangxuly"><i class="fa fa-file-text"></i> Backup Database</a></li>
+      <li><a routerLink="/vanban/vanban-daxuly"><i class="fa fa-folder-open"></i> Đổi mật khẩu</a></li>
+    </ul>
+  </aside>
+
+  <section class="page-content">
+    <!-- Nội dung chính -->
+    <h2>Thông tin văn bản</h2>
+
+    <div class="stat-boxes">
+      <div class="stat-card" style="background-color: #2e6da4; color: white;">
+        <div class = "top-row">
+          <div class="icon"><i class="fa fa-file"></i></div>
+
+          <div class = "text-column">
+            <div class="value">0</div>
+            <div class="label">Văn bản đến</div>
+          </div>
+        </div>
+        <a class="detail-link" [routerLink]="['/vanban/vanban-den']">Xem chi tiết</a>
+      </div>
+
+      <div class="stat-card" style="background-color: #5cb85c; color: white;">
+        <div class = "top-row">
+          <div class="icon"><i class="fa fa-sign-out"></i></div>
+
+          <div class = "text-column">
+            <div class="value">0</div>
+            <div class="label">Văn bản đi</div>
+          </div>
+        </div>
+        <a class="detail-link" [routerLink]="['/vanban/vanban-di']">Xem chi tiết</a>
+      </div>
+
+      <div class="stat-card" style="background-color: #f0ad4e; color: white;">
+        <div class = "top-row">
+          <div class="icon"><i class="fa fa-pencil"></i></div>
+
+          <div class = "text-column">
+            <div class="value">0</div>
+            <div class="label">Văn bản đang xử lý</div>
+          </div>
+        </div>
+        <a class="detail-link" [routerLink]="['/vanban/vanban-dangxuly']">Xem chi tiết</a>
+      </div>
+
+      <div class="stat-card" style="background-color: #d9534f; color: white;">
+        <div class = "top-row">
+          <div class="icon"><i class="fa fa-life-ring"></i></div>
+
+          <div class = "text-column">
+            <div class="value">0</div>
+            <div class="label">Văn bản quá hạn</div>
+          </div>
+        </div>
+        <a class="detail-link" [routerLink]="['/vanban/vanban-quahan']">Xem chi tiết</a>
+      </div>
+    </div>
+  </section>
+</div>
